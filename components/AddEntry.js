@@ -56,6 +56,12 @@ export default class AddEntry extends Component {
             />
         <Button raised rightIcon={{name: 'check'}} title='SUBMIT' onPress={this.submitForm}/>
         <Text>{this.state.submitMessage}</Text>
+        <Button
+          raised
+          large
+          title='Go back home'
+          onPress={() => this.props.navigation.navigate('Home')}
+        />
       </View>
     )
   }
