@@ -1,7 +1,8 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import { createStackNavigator, createAppContainer } from 'react-navigation';
-import Home from './screens/HomeScreen';
+
+import HomeScreen from './screens/HomeScreen';
 import AddEntryScreen from './screens/AddEntryScreen';
 import ListScreen from './screens/ListScreen';
 
@@ -9,7 +10,7 @@ import ListScreen from './screens/ListScreen';
 
 const AppNavigator = createStackNavigator({
   Home: {
-    screen: Home
+    screen: HomeScreen
   },
   AddEntry: {
     screen: AddEntryScreen
@@ -22,6 +23,7 @@ const AppNavigator = createStackNavigator({
 const AppContainer = createAppContainer(AppNavigator);
 
 export default class App extends React.Component {
+
   render() {
     return <AppContainer />
   }
