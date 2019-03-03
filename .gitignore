@@ -5,3 +5,4 @@ npm-debug.*
 *.p12
 *.key
 *.mobileprovision
+hello_world.js
